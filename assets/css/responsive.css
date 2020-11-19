@@ -1,0 +1,67 @@
+
+
+/* PHONE */
+@media (max-width: 600px){
+    body header .nav-left,
+    body main aside{
+        margin-left: -240px
+    }
+
+    header .nav-right .toggleside::before{
+        content: "\f105";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        -webkit-border-radius: 0px 4px 4px 0px;
+        -moz-border-radius: 0px 4px 4px 0px;
+        border-radius: 0px 4px 4px 0px;
+        cursor: pointer;
+        display: block;
+        width: 24px;
+        height: 23px;
+        line-height: 23px;
+        background-color: var(--primary);
+        color: var(--white);
+        font-weight: 700;
+        text-align: center;
+        z-index: 100;
+    }
+
+    body.sidebar-show .nav-right .toggleside::before{
+        content: "\f104";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 20px;
+        left: -24px;
+        -webkit-border-radius: 4px 0px 0px 4px;
+        -moz-border-radius: 4px 0px 0px 4px;
+        border-radius: 4px 0px 0px 4px;
+        cursor: pointer;
+        display: block;
+        width: 24px;
+        height: 23px;
+        line-height: 23px;
+        background-color: var(--primary);
+        color: var(--white);
+        font-weight: 700;
+        text-align: center;
+        z-index: 100;
+    }
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 992px) and (max-width: 1200px)  {
+
+}
+
+/* COMPUTER */
+@media only screen and (min-width: 1200px){
+
+}

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Admin</title>
+    <!-- Css Include -->
+    <link rel="stylesheet" href="assets/vendor/boostrap/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body class="">
+
+    <header>
+        <div class="nav-left">
+            <h1>Simple <span>Admin</span></h1>
+        </div>
+        <div class="nav-right">
+            <div class="toggleside"></div>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <div class="profile">
+                <div class="profile-pic">
+                    <img src="assets/images/profile/profile.png" alt="" srcset="">
+                </div>
+                <div class="profile-data">
+                    <p>Jonathan Christian</p>
+                    <span>Administrator</span>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="nav-category-divider">MAIN</li>
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="icon-screen-desktop"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-note"></i>
+                            <span>Forms</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-list"></i>
+                            <span>Tables</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-category-divider">ui features</li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-bar-chart"></i>
+                            <span>Charts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-rocket"></i>
+                            <span>Icons</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-drop"></i>
+                            <span>button</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-category-divider">Sample pages</li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-login"></i>
+                            <span>Login</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-doc"></i>
+                            <span>404 page</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </aside>
+        <content>
+            <div class="row">
+                <div class="col-12 mt-4 mb-5">
+                    <div class="page-header">
+                        <h4>Dashboard</h4>
+                        <p class="text-gray">Welcome back, Jonathan Christian</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-12 mb-3">
+                    <div class="box-dark">
+                        <div class="text-secondary">
+                            <div class="d-flex justify-content-between">
+                            <p>350,897</p>
+                            <p class="text-success"><i class="fa fa-arrow-up"></i>&nbsp; 06.2%</p>
+                            </div>
+                            <p class="text-light mt-3">Traffic</p>
+                            <div class="wrapper w-50 mt-4">
+                                <div id="chart-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-12 mb-3">
+                    <div class="box-dark">
+                        <div class="text-secondary">
+                            <div class="d-flex justify-content-between">
+                            <p>2,356</p>
+                            <p class="text-danger"><i class="fa fa-arrow-down"></i>&nbsp; 01.2%</p>
+                            </div>
+                            <p class="text-light mt-3">Corversion</p>
+                            <div class="wrapper w-50 mt-4">
+                                <div id="chart-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-12 mb-3">
+                    <div class="box-dark">
+                        <div class="text-secondary">
+                            <div class="d-flex justify-content-between">
+                            <p>924</p>
+                            <p class="text-danger"><i class="fa fa-arrow-down"></i>&nbsp; 02.7%</p>
+                            </div>
+                            <p class="text-light mt-3">New Users</p>
+                            <div class="wrapper w-50 mt-4">
+                                <div id="chart-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-12 mb-3">
+                    <div class="box-dark">
+                        <div class="text-secondary">
+                            <div class="d-flex justify-content-between">
+                            <p>4,965</p>
+                            <p class="text-success"><i class="fa fa-arrow-up"></i>&nbsp; 53.34%</p>
+                            </div>
+                            <p class="text-light mt-3">Sales</p>
+                            <div class="wrapper w-50 mt-4">
+                                <div id="chart-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="box-dark">
+                      <div class="d-flex flex-column h-100">
+                        <div class="wrapper">
+                          <div class="d-flex justify-content-between">
+                            <div class="split-header">
+                              <p class="card-title text-light">Followers Growth</p>
+                            </div>
+                            <div class="wrapper">
+                              <button class="btn action-btn btn-xs component-flat pr-0" type="button"><i class="icon-feed text-muted mdi-2x"></i></button>
+                              <button class="btn action-btn btn-xs component-flat pr-0" type="button"><i class="icon-cloud-download text-muted mdi-2x"></i></button>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-end pt-2 mb-4 text-light">
+                            <h4>16.2K</h4>
+                            <p class="ml-2 text-muted">New Followers</p>
+                          </div>
+                        </div>
+                        <div class="mt-auto">
+                          <canvas class="curved-mode" id="followers-bar-chart" height="220"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="box-dark">
+                        <p class="card-title text-light">Campaign</p>
+                        <div id="radial-chart"></div>
+                        <h4 class="text-center text-light mb-3" style="font-size: 20px;">$23,350.00</h4>
+                        <p class="text-center text-muted">Used balance this billing cycle</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="box-dark">
+                        <p class="card-title text-light">Performance</p>
+                        <h4 class="text-center">$23,350.00</h4>
+                        <p class="text-center text-muted">Used balance this billing cycle</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-6 mb-3">
+                    <div class="box-dark">
+                        <p class="card-title text-light">Performance</p>
+                        <div class="mt-auto">
+                            <div id="chart" class="chart"></div>
+                        </div>
+                        <h4 class="text-center">$23,350.00</h4>
+                        <p class="text-center text-muted">Used balance this billing cycle</p>
+                    </div>
+                </div>
+            </div>
+        </content>
+
+    </main>
+
+    <!-- Js Include -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.mobile-1.4.5.min.js"></script>
+    <script src="assets/vendor/boostrap/bootstrap.min.js"></script>
+
+    <script src="assets/vendor/chart-js/Chart.min.js"></script>
+    <script src="assets/vendor/chart-js/chartjs.addon.js"></script>
+    <script src="assets/vendor/apexchart/apexcharts.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        
+        $(function () {
+            "use strict";
+            window.Apex = {
+                stroke: {
+                    width: 3,
+                    curve: 'smooth'
+                },
+                markers: {
+                    size: 0
+                },
+                tooltip: {
+                    fixed: {
+                        enabled: true,
+                    }
+                }
+            };
+  
+            var randomizeArray = function (arg) {
+                var array = arg.slice();
+                var currentIndex = array.length,
+                temporaryValue, randomIndex;
+            
+                while (0 !== currentIndex) {
+            
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+            
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+                }
+            
+                return array;
+            }
+  
+            // data for the sparklines that appear below header area
+            var sparklineData1 = [25, 66, 41, 59, 25, 44, 12, 36, 9, 21];
+            var sparklineData2 = [12, 14, 2, 47, 32, 44, 14, 55, 41, 69];
+            var sparklineData3 = [47, 45, 74, 32, 56, 31, 44, 33, 45, 19];
+            var sparklineData4 = [15, 75, 47, 65, 14, 32, 19, 54, 44, 61];
+
+            var options1 = {
+            series: [{
+                data: sparklineData1
+            }],
+            chart: {
+                type: 'line',
+                width: 100,
+                height: 35,
+                sparkline: {
+                    enabled: true
+                }
+            },
+            
+            tooltip: {
+            fixed: {
+                enabled: false
+            },
+            x: {
+                show: false
+            },
+            y: {
+                title: {
+                formatter: function (seriesName) {
+                    return ''
+                }
+                }
+            },
+            marker: {
+                show: false
+            }
+            },
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shade: 'dark',
+                    gradientToColors: [ '#B721FF','#21D4FD'],
+                    shadeIntensity: 1,
+                    type: 'horizontal',
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [0, 100, 100, 100]
+                },
+            }
+            };
+
+            var chart1 = new ApexCharts(document.querySelector("#chart-1"), options1);
+            chart1.render();
+
+            // Chart2
+
+            var options2 = {
+            series: [{
+                data: sparklineData2
+            }],
+            chart: {
+            type: 'line',
+            width: 100,
+            height: 35,
+            sparkline: {
+                enabled: true
+            }
+            },
+            tooltip: {
+            fixed: {
+                enabled: false
+            },
+            x: {
+                show: false
+            },
+            y: {
+                title: {
+                formatter: function (seriesName) {
+                    return ''
+                }
+                }
+            },
+            marker: {
+                show: false
+            }
+            },
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shade: 'dark',
+                    gradientToColors: [ '#08AEEA','#2AF598'],
+                    shadeIntensity: 1,
+                    type: 'horizontal',
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [0, 100, 100, 100]
+                },
+            }
+            };
+
+            var chart2 = new ApexCharts(document.querySelector("#chart-2"), options2);
+            chart2.render();
+
+            // Chart3
+
+            var options3 = {
+            series: [{
+                data: sparklineData3
+            }],
+            chart: {
+                type: 'line',
+                width: 100,
+                height: 35,
+                sparkline: {
+                    enabled: true
+                }
+            },
+            
+            tooltip: {
+            fixed: {
+                enabled: false
+            },
+            x: {
+                show: false
+            },
+            y: {
+                title: {
+                formatter: function (seriesName) {
+                    return ''
+                }
+                }
+            },
+            marker: {
+                show: false
+            }
+            },
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shade: 'dark',
+                    gradientToColors: [ '#FEE140','#FA709A'],
+                    shadeIntensity: 1,
+                    type: 'horizontal',
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [20, 100, 100, 100]
+                },
+            }
+            };
+
+            var chart3 = new ApexCharts(document.querySelector("#chart-3"), options3);
+            chart3.render();
+
+            // Chart4
+            var options4 = {
+            series: [{
+                data: sparklineData4
+            }],
+            chart: {
+            type: 'line',
+            width: 100,
+            height: 35,
+            sparkline: {
+                enabled: true
+            }
+            },
+            tooltip: {
+            fixed: {
+                enabled: false
+            },
+            x: {
+                show: false
+            },
+            y: {
+                title: {
+                formatter: function (seriesName) {
+                    return ''
+                }
+                }
+            },
+            marker: {
+                show: false
+            }
+            },
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shade: 'dark',
+                    gradientToColors: [ '#ff7fc7','#43b4ff'],
+                    shadeIntensity: 1,
+                    type: 'horizontal',
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [0, 100, 100, 100]
+                },
+            }
+            };
+
+            var chart4 = new ApexCharts(document.querySelector("#chart-4"), options4);
+            chart4.render();
+
+
+            // Chart 5
+
+            var chartColors = ["#f5365c", "#7db8f9", "#05478f", "#00cccc", "#6CA5E0", "#1A76CA",'#8898aa'];
+
+            if ($("#followers-bar-chart").length) {
+                var a = {
+                        layout: {
+                            padding: {
+                                left: 0,
+                                right: 0,
+                                top: 0,
+                                bottom: 0
+                            }
+                        },
+                        scales: {
+                            responsive: !0,
+                            maintainAspectRatio: !0,
+                            yAxes: [{
+                                display: !0,
+                                gridLines: {
+                                    color: chartColors[6],
+                                    drawBorder: !1
+                                },
+                                ticks: {
+                                    min: 20,
+                                    max: 80,
+                                    stepSize: 20,
+                                    fontColor: chartColors[6],
+                                    maxTicksLimit: 3,
+                                    callback: function (a, e, r) {
+                                        return a + " K"
+                                    },
+                                    padding: 10
+                                }
+                            }],
+                            xAxes: [{
+                                display: !1,
+                                barPercentage: .3,
+                                gridLines: {
+                                    display: !1,
+                                    drawBorder: !1
+                                }
+                            }]
+                        },
+                        legend: {
+                            display: !1
+                        }
+                        
+                    },
+                    e = document.getElementById("followers-bar-chart");
+                new Chart(e, {
+                    type: "bar",
+                    data: {
+                        labels: ["Mon", "Tue", "Wed", "Thus", "Fri", "Sat"],
+                        datasets: [{
+                            label: "Follower",
+                            data: [62, 52, 73, 58, 63, 72],
+                            backgroundColor: [chartColors[0], chartColors[0], chartColors[0], chartColors[0], chartColors[0], chartColors[0]],
+                            borderColor: chartColors[0],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: a,
+                })
+            }
+
+
+            // Chart 6
+            if ($("#radial-chart").length) {
+                var r ;
+                a = {
+                    chart: {
+                        height: 230,
+                        type: "radialBar"
+                    },
+                    series: [67],
+                    colors: ["#696ffb"],
+                    plotOptions: {
+                        radialBar: {
+                            hollow: {
+                                margin: 0,
+                                size: "70%",
+                                background: "rgba(255,255,255,0.1)"
+                            },
+                            track: {
+                                dropShadow: {
+                                    enabled: !0,
+                                    top: 2,
+                                    left: 0,
+                                    blur: 4,
+                                    opacity: .02
+                                }
+                            },
+                            dataLabels: {
+                                name: {
+                                    offsetY: -10,
+                                    color: "#adb5bd",
+                                    fontSize: "13px"
+                                },
+                                value: {
+                                    offsetY: 5,
+                                    color: "#fff",
+                                    fontSize: "20px",
+                                    show: !0
+                                }
+                            }
+                        }
+                    },
+                    fill: {
+                        type: "gradient",
+                        gradient: {
+                            shade: "dark",
+                            type: "vertical",
+                            gradientToColors: ["#87D4F9"],
+                            stops: [0, 100]
+                        }
+                    },
+                    stroke: {
+                        lineCap: "round"
+                    },
+                    labels: ["Progress"]
+                };
+                (r = new ApexCharts(document.querySelector("#radial-chart"), a)).render()
+            }
+      
+            
+
+            var options = {
+                series: [{
+                    name: 'Likes',
+                    data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5]
+                }],
+                chart: {
+                    height: 350,
+                    type: 'line',
+                },
+                stroke: {
+                    width: 7,
+                    curve: 'smooth'
+                },
+                
+                xaxis: {
+                    type: 'datetime',
+                    categories: ['1/11/2000', '2/11/2000', '3/11/2000', '4/11/2000', '5/11/2000', '6/11/2000', '7/11/2000', '8/11/2000', '9/11/2000', '10/11/2000', '11/11/2000', '12/11/2000', '1/11/2001', '2/11/2001', '3/11/2001','4/11/2001' ,'5/11/2001' ,'6/11/2001'],
+                    tickAmount: 10,
+                    labels: {
+                        formatter: function(value, timestamp, opts) {
+                        return opts.dateFormatter(new Date(timestamp), 'dd MMM')
+                        }
+                    },
+                    
+                },
+                title: {
+                    text: 'Social Media',
+                    align: 'left',
+                    style: {
+                        fontSize: "16px",
+                        color: '#666'
+                    }
+                },
+                fill: {
+                    type: 'gradient',
+                    gradient: {
+                        shade: 'dark',
+                        gradientToColors: ['#FDD835'],
+                        shadeIntensity: 1,
+                        type: 'horizontal',
+                        opacityFrom: 1,
+                        opacityTo: 1,
+                        stops: [0, 100, 100, 100]
+                    },
+                },
+                markers: {
+                    size: 4,
+                    colors: ["#FFA41B"],
+                    strokeColors: "#fff",
+                    strokeWidth: 2,
+                    hover: {
+                        size: 7,
+                    }
+                },
+                yaxis: {
+                    min: -10,
+                    max: 40,
+                    title: {
+                        text: 'Engagement',
+                    },
+                },
+                
+            };
+
+            var chart = new ApexCharts(document.querySelector("#chart"), options);
+            chart.render();
+
+        });
+
+    </script>
+    <script>
+        
+    </script>
+</body>
+</html>
